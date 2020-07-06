@@ -1,0 +1,183 @@
+body{
+ background: linear-gradient(to right, pink,yellow,orange,skyblue);
+}
+
+
+h1{
+	font-style: initial;
+	font-family: monospace;
+	font-size: 50px;
+	text-align: center;
+}
+
+h2{
+	background:#669ff1;
+	font-size: 25px;
+	text-align: center;
+	font-style: italic;
+}
+
+h3{
+	background:#6bf56b;
+	text-align: center;
+	font-style: italic;
+
+}
+.book1{
+	font-style: initial;
+	font-family: monospace;
+	font-size: 30px;
+	color:red;
+	text-align: center;
+
+}
+.Headlinemain{
+	font-size: 25px;
+	color: grey;
+	text-align: center;
+}
+
+
+
+
+
+.Headline{
+	font-size: 15px;
+	color: green;
+
+}
+
+.background{
+	margin: 0;
+	padding: 0;
+
+}
+
+
+label, select{
+	margin:10px auto;
+}
+
+
+button{
+	border-radius: 50px;
+	background: #62f9eb;
+    text-align: center;	
+}
+
+.button:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	background-color:#f57be6;
+	box-shadow: 0 0 2px 1px rgba(0, 166, 186, 0.5);
+
+
+}
+
+.category{
+	display: inline-flex;
+
+}
+
+
+img{
+	width:120px;
+	height: 100px;
+	margin: 10px;
+	transition: all 1s;
+	border-radius: 8px;
+	display: inline-flex;
+
+}
+
+img:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	background-color: white;
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	
+}
+
+
+.sub{
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: row;
+}
+
+.end{
+	text-align: center;
+}
+
+figure{
+	text-align: center;
+}
+figcaption{
+	font-size: 20px;
+	color: black;
+	text-transform: uppercase;
+	font-family: monospace;
+	text-align: center;
+}
+ figcaption:hover{
+ 		cursor: pointer;
+ 		background: white;
+ }
+
+.search-box{
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #2f3640;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+
+.search-btn{
+	color: #e84118;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-box:hover >.search-txt{
+	width:240px;
+	padding: 0 6px;
+}
+
+.search-box:hover >.search-btn{
+	background: white;
+}
+.search-txt{
+	border: none;
+	background:none;
+	outline:none;
+	float: left;
+	padding: 0;
+	color: grey;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+	transition: 0.4s;
+}
+
+
+.options{
+	display:inline;
+	margin:10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.options{
+		display:block;
+		margin:10px;
+	}
+  }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JUST-BOOKS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<h1><span style="color: white">JUST</span><span style="color: red">BOOKS.IN</span></h1>
+	<div id="container">
+
+		<h2><span style="color: white">F!nD Yo</span><span style="color: red">uR BooK</span></h2>
+		<div class="selection" >
+			<div class="options"><label class="Headline">Genre*</label>
+				<select id="genre">
+					<option value="sci-fi">sci-fi</option>
+					<option value="horror">horror</option>
+					<option value="mystery">mystery</option>
+					<option value="romance">romance</option>
+					<option value="drama">drama</option>
+					<option value="poetry">poetry</option>
+					<option value="comic">comic</option>
+					<option value="medicine">medicine</option>
+				</select></div>
+		<div class="options"><label class="Headline">Language*</label>
+			<select id="Language">
+				<option value="kannada">kannada</option>
+				<option value="english">english</option>
+				<option value="hindi">hindi</option>
+				<option value="marathi">marathi</option>
+				<option value="bengali">bengali</option>
+				<option value="tamil">tamil</option>
+			</select></div>
+		<div class="options">
+			<label class="Headline">State*</label>
+			<select id="State">
+				<option value="karnataka">karnataka</option>
+				<option value="tamilnadu">tamilnadu</option>
+				<option value="kerala">kerala</option>
+				<option value="maharastra">maharastra</option>
+				<option value="delhi">delhi</option>
+				<option value="uttar-pradesh">uttar-pradesh</option>
+			</select>
+		</div>
+		<div class="options">	<label class="Headline">City*</label>
+			<select id="City">
+				<option value="bangalore">bangalore</option>
+				<option value="chennai">chennai</option>
+				<option value="hyderabad">hyderabad</option>
+				<option value="mumbai">mumbai</option>
+				<option value="delhi">delhi</option>
+				<option value="lucknow">lucknow</option>
+			</select></div>
+</div>
+<button class="button" id="FIND">F!nD Y0uR BooK</button>
+<div id="display"></div>
+
+	</div>
+	<h2><label class="Types"><span style="color: white"> Shop b</span><span style="color: red">y Types</span></label></h2>
+	<div class="sub">
+		
+		
+		<figure>
+			<img alt="book" src="book\thriller.jpg" >
+			<figcaption>Thriller</figcaption>
+		</figure>
+		<figure>
+			<img alt="book" src="book\comedy.jpg" >
+			<figcaption>Comedy</figcaption> 
+		</figure>
+		<figure>
+			<img alt="book" src="book\horror.jpg" >
+				<figcaption>Horror</figcaption>
+		</figure> 
+		<figure>
+		<img alt="book" src="book\comic.jpg" >
+			<figcaption>Comic</figcaption>
+		</figure>
+		<figure> 
+			<img alt="book" src="book\poetry.jpg" >
+			<figcaption>Poetry</figcaption>
+		</figure>
+		<figure> 
+			<img alt="book" src="book\drama.jpg" >
+			<figcaption>drama</figcaption>
+		</figure>
+	
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script> 
+	<div class="search-box">
+	<input class="search-txt" type="text" id="text1" name="" placeholder="enter your name">
+	<button class="search-btn" id="btn1" onclick="func1()"> click here </button>
+	<script >
+		
+
+		alert("WELCOME to JUSTBOOKS.in");
+
+
+				const getData = () => {
+						let genre = document.getElementById('genre').value
+						let state= document.getElementById('State').value
+						let city = document.getElementById('City').value
+						let language = document.getElementById('Language').value
+						
+						let info = `<h3>You genre is ${genre}, state you live is ${state} , city you leave is ${city}
+						 and language you want is ${language}.</h3>`
+						
+						let display = document.getElementById('display')
+						display.innerHTML= info
+					}
+					let btn = document.getElementById("FIND");
+					btn.addEventListener('click',getData)
+
+
+				function func1() {
+				   		var str=document.getElementById('text1').value;
+				   		alert("thanks for visiting our page: "+str);
+				}
+
+	</script>
+</div>
+</body>
+</html>
